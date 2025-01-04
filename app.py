@@ -19,7 +19,7 @@ def log_message():
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)
-    app.run(debug=Flase)
+    app.run(debug=False)
     st.write("Streamlit app running")
     st.write("Use the /log endpoint to send log messages.")
 
