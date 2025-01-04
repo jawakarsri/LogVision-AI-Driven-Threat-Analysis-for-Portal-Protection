@@ -19,9 +19,9 @@ from zipfile import ZipFile
 import os
 import random
 
-replyto = 'jaceknight104@gmail.com'
+replyto = 'jawaharsri2003@gmail.com'
 subject = 'REPORT'
-name = 'BhuvanRKSHA'
+name = 'LogVision'
 
 counter = {}
 reboot_time = 3000 
@@ -86,7 +86,7 @@ def read(src, pos, n):
                     pdf_path = f"reports/report{i}.pdf"
                     doc = SimpleDocTemplate(pdf_path, pagesize=letter)
                     style = getSampleStyleSheet()["Heading1"]
-                    title = Paragraph("BhuvanRKSHA Report", style)
+                    title = Paragraph("LogVision Report", style)
                     style = getSampleStyleSheet()["BodyText"]
                     brief = Paragraph(
                         "Detected {} threats out of {} logs.".format(sum(pred), len(lines)),

@@ -20,7 +20,7 @@ import math
 # 2023-10-31T05:09:43.880561+05:30 172.26.5.193 logver=506141727 timestamp=1698708407 tz="UTC+5:30" devname="FGT3600C_HA" devid="FG3K6C3A15800081" vd="root" date=2023-10-31 time=04:56:47 logid="0000000011" type="traffic" subtype="forward" level="warning" eventtime=1698708407 srcip=185.81.113.89 srcintf="LLB- Connect" srcintfrole="wan" dstip=172.26.2.51 dstintf="Local_LAN" dstintfrole="undefined" poluuid="3367bf4c-74ff-51e8-3e96-72b0684b3e81" sessionid=1943966208 proto=1 action="ip-conn" policyid=49 policytype="policy" service="icmp/0/8" appcat="unscanned" crscore=5 craction=262144 crlevel="low"
 # """
 
-st.set_page_config(page_title="BhuvanRKSHA", page_icon=":shield:")
+st.set_page_config(page_title="LogVision", page_icon=":shield:")
 st.markdown(
     """
             <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/xolonium" type="text/css">
@@ -36,7 +36,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.title("BhuvanRKSHA")
+st.title("LogVision")
 
 
 st.markdown(
