@@ -4,7 +4,6 @@ import time
 from itertools import islice
 import pandas as pd
 import pipeline as pl
-# Ensure that the 'reportlab' library is installed in your environment
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 from reportlab.lib.styles import getSampleStyleSheet
@@ -20,15 +19,12 @@ from zipfile import ZipFile
 import os
 import random
 
-replyto = 'jawaharsri2003@gmail.com'
+replyto = 'jaceknight104@gmail.com'
 subject = 'REPORT'
-name = 'IntelliLogix'
+name = 'BhuvanRKSHA'
 
 counter = {}
 reboot_time = 3000 
-
-if not os.path.exists("user.csv"):
-    raise FileNotFoundError("The file 'user.csv' does not exist.")
 
 with open("user.csv") as f:
     data = [row for row in csv.reader(f)]
@@ -90,7 +86,7 @@ def read(src, pos, n):
                     pdf_path = f"reports/report{i}.pdf"
                     doc = SimpleDocTemplate(pdf_path, pagesize=letter)
                     style = getSampleStyleSheet()["Heading1"]
-                    title = Paragraph("IntelliLogix Report", style)
+                    title = Paragraph("BhuvanRKSHA Report", style)
                     style = getSampleStyleSheet()["BodyText"]
                     brief = Paragraph(
                         "Detected {} threats out of {} logs.".format(sum(pred), len(lines)),
@@ -104,7 +100,7 @@ def read(src, pos, n):
                         )
                         report.append(body)
                     body = Paragraph(
-                        "The following report contains the level 3 threats (if any) detected by IntelliLogix.",
+                        "The following report contains the level 3 threats (if any) detected by BhuvanRKSHA.",
                         style,
                     )
                     report.append(body)
