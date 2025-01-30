@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import re
 import pickle
-import sklearn
+import sklearn  # Ensure sklearn is imported
 import xgboost
 import lightgbm
 import warnings
